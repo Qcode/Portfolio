@@ -1,0 +1,9 @@
+.blog-entry {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 2px dotted white;
+}
+
+.blog-post-date {
+  text-align: right;
+}
