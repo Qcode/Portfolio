@@ -1,7 +1,7 @@
 .blog-entry {
   padding-bottom: 10px;
   margin-bottom: 10px;
-  border-bottom: 2px dotted white;
+  border-bottom: 2px solid white;
 }
 
 .blog-post-date {

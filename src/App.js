@@ -2,7 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import About from './About';
 import Blog from './Blog';
-import BlogPost from './BlogPost';
+import IndividualBlogPost from './IndividualBlogPost';
 import Projects from './Projects';
 import Sidebar from './Sidebar';
 import ProjectDetails from './ProjectDetails';
@@ -15,7 +15,7 @@ function App() {
       <Route exact path="/" component={Blog} />
       <Route exact path="/about" component={About} />
       <Route exact path="/blog" component={Blog} />
-      <Route exact path="/blog/:blogSlug" component={BlogPost} />
+      <Route exact path="/blog/:blogSlug" component={IndividualBlogPost} />
       <Route exact path="/projects" component={Projects} />
       <Route exact path="/projects/:project" component={ProjectDetails} />
     </div>
