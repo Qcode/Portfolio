@@ -1,0 +1,22 @@
+.project-tab-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-body {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.project-tab-link {
+  text-decoration: none;
+}
+
+.project-tab {
+  text-decoration: none;
+}
+
+.project-tab__selected {
+  color: white;
+  border-bottom: 2px solid rgb(70, 90, 126);
+}

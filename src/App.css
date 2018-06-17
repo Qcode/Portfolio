@@ -91,6 +91,8 @@ iframe {
   border-radius: 4px;
   margin: auto;
   display: block;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .page-container {

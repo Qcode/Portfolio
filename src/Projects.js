@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import ProjectCard from './ProjectCard';
 import extendedEssayCardImage from './assets/project-cards/EE.png';
 import gtaVIImage from './assets/project-cards/gtavi.png';
