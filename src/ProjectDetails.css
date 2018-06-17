@@ -20,3 +20,8 @@
   color: white;
   border-bottom: 2px solid rgb(70, 90, 126);
 }
+
+.project-downloads-container {
+  display: flex;
+  justify-content: space-around;
+}

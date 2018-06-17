@@ -42,4 +42,9 @@ export default {
 
   All controls are customizable inside of the launcher menu.`,
   credits: '**TheSeek** - Art and Music',
+  downloads: {
+    Mac: '3DTetris/3DTetrisMac.zip',
+    Windows: '3DTetris/3DTetrisWin.zip',
+    Linux: '3DTetris/3DTetrisLinux.zip',
+  },
 };

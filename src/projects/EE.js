@@ -12,4 +12,7 @@ export default {
 
   I also eventually presented on this topic to the PEIDevs group in March 2017. This presentation was recorded, and is available below.
   <iframe width="560" height="315" src="https://www.youtube.com/embed/edkk3AZbfkI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`,
+  downloads: {
+    'Download the PDF': 'EE.pdf',
+  },
 };

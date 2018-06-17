@@ -31,4 +31,9 @@ export default {
   **TheSeek** - Graphics and Sound Effects
 
   **Mr.Q.Marx?** - Music`,
+  downloads: {
+    Mac: 'Dimensionaut/DimensionautMac.zip',
+    Windows: 'Dimensionaut/DimensionautWin.zip',
+    Source: 'Dimensionaut/DimensionautSource.zip',
+  },
 };

@@ -23,4 +23,9 @@ export default {
   credits: `**Sam Lopes** - Additional programming
 
   **Rosanna Kressin** - Art`,
+  downloads: {
+    Mac: 'GTA VI/GTA VI Mac.zip',
+    Windows: 'GTA VI/GTA VI Win.zip',
+    Source: 'GTA VI/GTA VI.love',
+  },
 };

@@ -34,4 +34,9 @@ export default {
   **TheSeek** - Graphics and Level Design
 
   **Mr.Q.Marx?** - Music`,
+  downloads: {
+    Mac: 'IdiotPuzzles/IdiotPuzzlesMac.zip',
+    Windows: 'IdiotPuzzles/IdiotPuzzlesWin.zip',
+    Source: 'IdiotPuzzles/IdiotPuzzlesSource.zip',
+  },
 };

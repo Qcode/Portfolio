@@ -12,6 +12,8 @@ import gtaVIProject from './projects/GTAVI';
 import eeProject from './projects/EE';
 import './ProjectDetails.css';
 
+const downloadsBaseUrl = 'https://rossevansgames.com/Downloads/';
+
 const ProjectMap = {
   bighead: bigheadProject,
   'idiot-puzzles': idiotPuzzlesProject,
@@ -58,6 +60,15 @@ function ProjectDetails(props) {
         ))}
       </div>
       <Markdown className="project-body" source={project[currentTab]} escapeHtml={false} />
+      {project.downloads && <h2>Downloads</h2>}
+      <div className="project-downloads-container">
+        {project.downloads &&
+          Object.entries(project.downloads).map(value => (
+            <a href={`${downloadsBaseUrl}${value[1]}`}>
+              <p>{value[0]}</p>
+            </a>
+          ))}
+      </div>
     </div>
   );
 }

@@ -20,4 +20,9 @@ export default {
   <img src=${menuImage}/>
   <img src=${lobbyImage}/>
   `,
+  downloads: {
+    Mac: 'Mari0online/Mari0onlineMac.zip',
+    Windows: 'Mari0online/Mari0onlineWin.zip',
+    Source: 'Mari0online/Mari0onlineSource.love',
+  },
 };

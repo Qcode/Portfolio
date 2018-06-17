@@ -14,7 +14,9 @@ export default {
 
   Nevertheless, I think this game has some of my best game design so far. 2014 was the year of Flappy Bird, and so my game was developed to be similarly brutally difficult. The mechanics of the game are simple, press left to shoot left, right to shoot right, and middle to jump. Though the controls are simple, the finesse of the game is in the movement. All shots to the right will give you knockback to the left, and shots to the left will give you knockback to the right.
 
-  To play Jump and Shoot, one must control offensively and defensively at the same time, all the while being swarmed by rapid enemies who jump, possess shields, and fly through the air.`,
+  To play Jump and Shoot, one must control offensively and defensively at the same time, all the while being swarmed by rapid enemies who jump, possess shields, and fly through the air.
+
+  [Download on the App Store](https://itunes.apple.com/us/app/jump-and-shoot/id885610365)`,
   media: `
   <iframe width="560" height="315" src="https://www.youtube.com/embed/-pI9IxZ0tOY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   <img src=${logoImage}/>

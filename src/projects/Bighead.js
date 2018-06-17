@@ -24,4 +24,9 @@ export default {
   credits: `**J.T. Vineyard** - Music, Sound Effects, and Level Design
 
   **Finn Belanger** - Art and Level Design`,
+  downloads: {
+    Mac: 'Bighead/BigheadMac.zip',
+    Windows: 'Bighead/BigheadWin.zip',
+    Source: 'Bighead/BigheadSource.zip',
+  },
 };
