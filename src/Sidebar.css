@@ -26,3 +26,13 @@
   font-size: 25px;
   margin-bottom: 10px;
 }
+
+.sidebar-image {
+  width: 48px;
+  margin-bottom: 16px;
+  border: none;
+}
+
+.sidebar-linkedin-image {
+  width: 100px;
+}
