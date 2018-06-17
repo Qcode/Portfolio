@@ -18,6 +18,7 @@ function App() {
       <Route exact path="/blog/:blogSlug" component={IndividualBlogPost} />
       <Route exact path="/projects" component={Projects} />
       <Route exact path="/projects/:project" component={ProjectDetails} />
+      <Route exact path="/projects/:project/:projectTab" component={ProjectDetails} />
     </div>
   );
 }

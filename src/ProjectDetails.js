@@ -1,30 +1,86 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
+import Markdown from 'react-markdown';
+import bigheadProject from './projects/Bighead';
+import idiotPuzzlesProject from './projects/IdiotPuzzles';
+import dimensionautProject from './projects/Dimensionaut';
+import threeDTetrisProject from './projects/3DTetris';
+import jumpAndShootProject from './projects/JumpAndShoot';
+import mari0OnlineModProject from './projects/Mari0OnlineMod';
+import gtaVIProject from './projects/GTAVI';
+import eeProject from './projects/EE';
+import './ProjectDetails.css';
+
+const downloadsBaseUrl = 'https://rossevansgames.com/Downloads/';
 
 const ProjectMap = {
-  bighead: <h1>Bighead</h1>,
-  'idiot-puzzles': <h1>Idiot Puzzles</h1>,
-  dimensionaut: <h1>Dimensionaut</h1>,
-  '3d-tetris': <h1>3d Tetris</h1>,
-  'jump-and-shoot': <h1>Jump and Shoot</h1>,
-  'mari0-online-mod': <h1>Mari0 Online Mod</h1>,
-  'gta-vi': <h1>GTA VI</h1>,
-  'extended-essay': <h1>Extended Essay</h1>,
+  bighead: bigheadProject,
+  'idiot-puzzles': idiotPuzzlesProject,
+  dimensionaut: dimensionautProject,
+  '3d-tetris': threeDTetrisProject,
+  'jump-and-shoot': jumpAndShootProject,
+  'mari0-online-mod': mari0OnlineModProject,
+  'gta-vi': gtaVIProject,
+  'extended-essay': eeProject,
 };
 
 function ProjectDetails(props) {
-  if (ProjectMap[props.match.params.project]) {
-    return ProjectMap[props.match.params.project];
+  const project = ProjectMap[props.match.params.project];
+  if (!project) {
+    return (
+      <div className="page-container">
+        <h1>404</h1>
+      </div>
+    );
   }
-  return <h1>404 - Project Not Found</h1>;
+  const currentTab = props.match.params.projectTab
+    ? props.match.params.projectTab.toLowerCase()
+    : project.defaultTab;
+
+  return (
+    <div className="page-container project-container">
+      <h1>{project.title}</h1>
+      <div className="project-tab-container">
+        {project.tabs.map(string => (
+          <NavLink
+            className="project-tab-link"
+            to={`/projects/${props.match.params.project}/${string.toLowerCase()}`}
+          >
+            <p
+              className={
+                currentTab.toLowerCase() === string.toLowerCase()
+                  ? 'project-tab project-tab__selected'
+                  : 'project-tab'
+              }
+            >
+              {string}
+            </p>
+          </NavLink>
+        ))}
+      </div>
+      <Markdown className="project-body" source={project[currentTab]} escapeHtml={false} />
+      {project.downloads && <h2>Downloads</h2>}
+      <div className="project-downloads-container">
+        {project.downloads &&
+          Object.entries(project.downloads).map(value => (
+            <a href={`${downloadsBaseUrl}${value[1]}`}>
+              <p>{value[0]}</p>
+            </a>
+          ))}
+      </div>
+    </div>
+  );
 }
 
 ProjectDetails.propTypes = {
-  match: PropTypes.shape({ params: PropTypes.shape({ project: PropTypes.string }) }),
+  match: PropTypes.shape({
+    params: PropTypes.shape({ project: PropTypes.string, projectTab: PropTypes.string }),
+  }),
 };
 
 ProjectDetails.defaultProps = {
-  match: { params: { project: '' } },
+  match: { params: { project: '', projectTab: PropTypes.string } },
 };
 
 export default ProjectDetails;
