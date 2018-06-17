@@ -19,10 +19,13 @@ export default {
 
   Nevertheless, it's interesting to try out - if you can master the many, many controls, you might have some fun.`,
   media: `
-  <img src=${logoImage}/>
-  <img src=${shot1Image}/>
-  <img src=${shot2Image}/>
-  <img src=${shot3Image}/>
+  ![Logo](${logoImage})
+
+  ![In-Game 1](${shot1Image})
+
+  ![In-Game 2](${shot2Image})
+
+  ![In-Game 3](${shot3Image})
   `,
   controls: `**Arrow keys** - Move tetromino on board
 

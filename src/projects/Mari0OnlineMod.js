@@ -16,9 +16,12 @@ export default {
   And, there was even a [Polish Let's Play](https://www.youtube.com/watch?v=VVkcvR6b7T8) made with almost 1 million views. How cool is that?`,
   media: `
   <iframe width="560" height="315" src="https://www.youtube.com/embed/hjqXkqGx3vM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  <img src=${titleImage}/>
-  <img src=${menuImage}/>
-  <img src=${lobbyImage}/>
+
+  ![Logo](${titleImage})
+
+  ![Online Menu](${menuImage})
+
+  ![Lobby Menu](${lobbyImage})
   `,
   downloads: {
     Mac: 'Mari0online/Mari0onlineMac.zip',

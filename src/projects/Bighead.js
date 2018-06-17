@@ -14,9 +14,11 @@ export default {
 
   If you've got some time and are interested in seeing my first ever project - I'd give this a try. There are 50 levels, with unlockable cheat modes for beating the entire game.`,
   media: `
-  <img src=${titleImage}/>
-  <img src=${playersImage}/>
-  <img src=${ingameImage}/>
+  ![Menu Screen](${titleImage})
+
+  ![Player Select Screen](${playersImage})
+
+  ![In Game](${ingameImage})
   `,
   controls: `**Arrow Keys** - Move
 

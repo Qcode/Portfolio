@@ -20,11 +20,15 @@ export default {
 
   Although the game is pretty generic - one of my friends described the puzzles as "remarkably linear", it's still 25 levels of reasonable quality, free, video game entertainment. I'd recommend giving it a try, if for nothing other than to try 10+ hats in the settings menu.`,
   media: `
-  <img src=${titleImage}/>
-  <img src=${shot1Image}/>
-  <img src=${shot2Image}/>
-  <img src=${shot3Image}/>
-  <img src=${shot4Image}/>
+  ![Menu Screen](${titleImage})
+
+  ![In-Game 1](${shot1Image})
+
+  ![In-Game 2](${shot2Image})
+
+  ![In-Game 3](${shot3Image})
+
+  ![In-Game 4](${shot4Image})
   `,
   controls: `**Arrow Keys** - Move
 

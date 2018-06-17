@@ -12,10 +12,13 @@ export default {
 
   Dimensionaut is a short game with some innovative ideas that can be fully experienced in 15 minutes.`,
   media: `
-  <img src=${shot1Image}/>
-  <img src=${shot2Image}/>
-  <img src=${shot3Image}/>
-  <img src=${shot4Image}/>
+  ![In-Game 1](${shot1Image})
+
+  ![In-Game 2](${shot2Image})
+
+  ![In-Game 3](${shot3Image})
+
+  ![In-Game 4](${shot4Image})
   `,
   controls: `**Arrow Keys** - Move
 

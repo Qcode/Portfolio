@@ -13,9 +13,11 @@ export default {
 
   GTA VI is a 2d top-down shooter, with infinite waves of enemies and scalable difficulty. You, as the bucket headed protagonist, attempt to prevent swarms of turtles from reaching the ever important crystal. I'm sure this is symbolic for something somehow`,
   media: `
-  <img src=${shot1Image}/>
-  <img src=${shot2Image}/>
-  <img src=${shot3Image}/>
+  ![In Game 1](${shot1Image})
+
+  ![In Game 2](${shot2Image})
+
+  ![In Game 3](${shot3Image})
   `,
   controls: `**WASD** - Move
 
