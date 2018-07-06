@@ -10,6 +10,7 @@ import jumpAndShootProject from './projects/JumpAndShoot';
 import mari0OnlineModProject from './projects/Mari0OnlineMod';
 import gtaVIProject from './projects/GTAVI';
 import eeProject from './projects/EE';
+import secretHitlerProject from './projects/SecretHitler';
 import './ProjectDetails.css';
 
 const downloadsBaseUrl = 'https://rossevansgames.com/Downloads/';
@@ -23,6 +24,7 @@ const ProjectMap = {
   'mari0-online-mod': mari0OnlineModProject,
   'gta-vi': gtaVIProject,
   'extended-essay': eeProject,
+  'secret-hitler': secretHitlerProject,
 };
 
 function ProjectDetails(props) {
