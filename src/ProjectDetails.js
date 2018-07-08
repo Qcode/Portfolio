@@ -13,7 +13,7 @@ import eeProject from './projects/EE';
 import secretHitlerProject from './projects/SecretHitler';
 import './ProjectDetails.css';
 
-const downloadsBaseUrl = 'https://rossevansgames.com/Downloads/';
+const downloadsBaseUrl = 'https://downloads.rossevansgames.com/';
 
 const ProjectMap = {
   bighead: bigheadProject,
