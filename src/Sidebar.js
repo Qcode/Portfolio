@@ -9,15 +9,17 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <h1 className="sidebar-title">Ross Evans</h1>
-      <h2 className="sidebar-link">
-        <NavLink to="/blog">Blog</NavLink>
-      </h2>
-      <h2 className="sidebar-link">
-        <NavLink to="/about">About</NavLink>
-      </h2>
-      <h2 className="sidebar-link">
-        <NavLink to="/projects">Projects</NavLink>
-      </h2>
+      <div className="sidebar-links">
+        <h2 className="sidebar-link">
+          <NavLink to="/blog">Blog</NavLink>
+        </h2>
+        <h2 className="sidebar-link sidebar-about">
+          <NavLink to="/about">About</NavLink>
+        </h2>
+        <h2 className="sidebar-link">
+          <NavLink to="/projects">Projects</NavLink>
+        </h2>
+      </div>
       <a href="https://github.com/Qcode">
         <img alt="GitHub Logo" className="sidebar-image" src={githubImage} />
       </a>
