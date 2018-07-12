@@ -11,6 +11,7 @@ import mari0OnlineModProject from './projects/Mari0OnlineMod';
 import gtaVIProject from './projects/GTAVI';
 import eeProject from './projects/EE';
 import secretHitlerProject from './projects/SecretHitler';
+import FourOhFour from './FourOhFour';
 import './ProjectDetails.css';
 
 const downloadsBaseUrl = 'https://downloads.rossevansgames.com/';
@@ -30,11 +31,7 @@ const ProjectMap = {
 function ProjectDetails(props) {
   const project = ProjectMap[props.match.params.project];
   if (!project) {
-    return (
-      <div className="page-container">
-        <h1>404</h1>
-      </div>
-    );
+    return <FourOhFour />;
   }
   const currentTab = props.match.params.projectTab
     ? props.match.params.projectTab.toLowerCase()
