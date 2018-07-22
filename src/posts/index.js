@@ -1,3 +1,4 @@
+import mindfulReddit from './mindful-reddit';
 import firstPost from './first-post';
 
-export default [firstPost];
+export default [mindfulReddit, firstPost];

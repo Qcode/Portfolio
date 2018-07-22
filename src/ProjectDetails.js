@@ -11,6 +11,7 @@ import mari0OnlineModProject from './projects/Mari0OnlineMod';
 import gtaVIProject from './projects/GTAVI';
 import eeProject from './projects/EE';
 import secretHitlerProject from './projects/SecretHitler';
+import mindfulRedditProject from './projects/MindfulReddit';
 import FourOhFour from './FourOhFour';
 import './ProjectDetails.css';
 
@@ -26,6 +27,7 @@ const ProjectMap = {
   'gta-vi': gtaVIProject,
   'extended-essay': eeProject,
   'secret-hitler': secretHitlerProject,
+  'mindful-reddit': mindfulRedditProject,
 };
 
 function ProjectDetails(props) {
@@ -44,7 +46,9 @@ function ProjectDetails(props) {
         {project.tabs.map(string => (
           <NavLink
             className="project-tab-link"
-            to={`/projects/${props.match.params.project}/${string.toLowerCase()}`}
+            to={`/projects/${
+              props.match.params.project
+            }/${string.toLowerCase()}`}
           >
             <p
               className={
@@ -58,7 +62,11 @@ function ProjectDetails(props) {
           </NavLink>
         ))}
       </div>
-      <Markdown className="project-body" source={project[currentTab]} escapeHtml={false} />
+      <Markdown
+        className="project-body"
+        source={project[currentTab]}
+        escapeHtml={false}
+      />
       {project.downloads && <h2>Downloads</h2>}
       <div className="project-downloads-container">
         {project.downloads &&
@@ -74,7 +82,10 @@ function ProjectDetails(props) {
 
 ProjectDetails.propTypes = {
   match: PropTypes.shape({
-    params: PropTypes.shape({ project: PropTypes.string, projectTab: PropTypes.string }),
+    params: PropTypes.shape({
+      project: PropTypes.string,
+      projectTab: PropTypes.string,
+    }),
   }),
 };
 
