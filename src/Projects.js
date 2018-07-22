@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import mindfulRedditImage from './assets/project-cards/mindfulreddit.png';
 import secretHitlerImage from './assets/project-cards/secrethitler.png';
 import extendedEssayCardImage from './assets/project-cards/EE.png';
 import gtaVIImage from './assets/project-cards/gtavi.png';
@@ -13,6 +14,11 @@ import bigheadCardImage from './assets/project-cards/bighead.png';
 import './Projects.css';
 
 const projectMap = [
+  {
+    imgSrc: mindfulRedditImage,
+    slug: 'mindful-reddit',
+    title: 'Mindful Reddit',
+  },
   {
     imgSrc: secretHitlerImage,
     slug: 'secret-hitler',
@@ -66,7 +72,11 @@ function Projects() {
       <h1>Projects</h1>
       <div className="projects-container">
         {projectMap.map(project => (
-          <ProjectCard imgSrc={project.imgSrc} slug={project.slug} title={project.title} />
+          <ProjectCard
+            imgSrc={project.imgSrc}
+            slug={project.slug}
+            title={project.title}
+          />
         ))}
       </div>
     </div>
